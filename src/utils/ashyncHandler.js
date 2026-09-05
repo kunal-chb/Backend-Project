@@ -10,7 +10,7 @@
 // } this one is try catch handler method. Now we will try to do it through promises
 
 const asyncHandler = (requestHandler) => {
-    (req, res, next) => {
+    return  (req, res, next) => {
         Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err))
     }
 }
