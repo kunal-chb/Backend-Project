@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{server}}/users/register"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: kunal kumar
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: kk@gmail.com
+      description: ""
+      disabled: false
+    - type: text
+      key: username
+      value: tyson
+      description: ""
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - /Users/kunalkumar/Downloads/Screenshot 2026-09-13 at 6.34.49 PM.png
+      description: ""
+      disabled: false
+    - type: file
+      key: coverImage
+      src:
+        - /Users/kunalkumar/Downloads/ai_robot_image.png
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: "123456789"
+      description: ""
+      disabled: false
+order: 1789441289725
