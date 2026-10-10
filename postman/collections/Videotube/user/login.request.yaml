@@ -1,0 +1,20 @@
+$kind: http-request
+description: ""
+url: "{{server}}/users/login"
+method: POST
+body:
+  type: urlencoded
+  content:
+    - key: email
+      value: kk@gmail.com
+      description: ""
+      disabled: false
+    - key: username
+      value: tyson
+      description: ""
+      disabled: false
+    - key: password
+      value: "123456789"
+      description: ""
+      disabled: false
+order: 1118500619627265
